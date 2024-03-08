@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import ChoiceAmenity from './src/pages/CreatePalace/ChoiceAmenity';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>đồ án l</Text>
+      <Text>Airbnb</Text>
       <StatusBar style="auto" />
-
       <ChoiceAmenity />
+      <Button title='Tiếp tục' />
+
     </View>
   );
 }
@@ -16,7 +17,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },

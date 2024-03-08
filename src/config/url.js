@@ -1,5 +1,8 @@
 export const _url = {
-    server: "https://localhost:7012/",
+    server: "http://192.168.1.113:5000/",
+    iconFolder: "user-content/icon/",
+
+    //api
     apiAmenity: "Amenities/getList" 
 }
 
