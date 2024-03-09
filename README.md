@@ -30,6 +30,7 @@ const config = {
  },
 };
 
-module.exports = mergeConfig(defaultConfig, config);   ```
+module.exports = mergeConfig(defaultConfig, config);   
+```
 
 5.  npm add --dev @react-native/js-polyfills metro-config @react-native/metro-babel-transformer metro-runtime @react-native/metro-config
