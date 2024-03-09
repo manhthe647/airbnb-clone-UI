@@ -1,18 +1,36 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import ChoiceAmenity from './src/pages/CreatePalace/ChoiceAmenity';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import ChoiceAmenity from './src/pages/Host/CreatePalace/ChoiceAmenity';
+// import Home from './src/pages/Guest/Home/Home';
+import AuthStack from './src/navigation/AuthStack';
+// import AppStack from './src/navigation/AppStack';
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Airbnb</Text>
-      <StatusBar style="auto" />
-      <ChoiceAmenity />
-      <Button title='Tiếp tục' />
-
-    </View>
+    <NavigationContainer>
+      {/* <AppStack /> */}
+      <AuthStack />
+    </NavigationContainer>
   );
 }
+
+export default App;
+
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>Airbnb</Text>
+//       {/* <StatusBar style="auto" /> */}
+//       {/* <Home /> */}
+//       {/* <ChoiceAmenity /> */}
+//       <AuthStack/>
+//     </View>
+//   );
+// }
+
+
 
 const styles = StyleSheet.create({
   container: {

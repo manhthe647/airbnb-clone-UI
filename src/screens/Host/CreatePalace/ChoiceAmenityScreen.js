@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAmenity } from "../../apis/apiAmenity";
-import { View, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { Text, Card } from '@rneui/themed';
 import { _url } from "../../config/url";
 
