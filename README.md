@@ -6,7 +6,7 @@
  3. npm i react-native-svg-transformer
  4. create metro.config.js
  
-` const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
+``` const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
 
 const defaultConfig = getDefaultConfig(__dirname);
 
@@ -30,6 +30,6 @@ const config = {
  },
 };
 
-module.exports = mergeConfig(defaultConfig, config);   `
+module.exports = mergeConfig(defaultConfig, config);   ```
 
 5.  npm add --dev @react-native/js-polyfills metro-config @react-native/metro-babel-transformer metro-runtime @react-native/metro-config
