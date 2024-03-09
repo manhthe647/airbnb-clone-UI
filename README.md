@@ -1,7 +1,7 @@
 
  # svg transfer
  
- 1. react-native 0.70.0
+ 1. npm i react-native@0.70.0
  2. npm i react-native-svg
  3. npm i react-native-svg-transformer
  4. create metro.config.js
