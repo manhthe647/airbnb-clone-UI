@@ -167,7 +167,7 @@ const RegisterScreen = ({navigation}) => {
           </TouchableOpacity>
         </View>
 
-        <DatePicker
+        {/* <DatePicker
           modal
           open={open}
           date={date}
@@ -182,7 +182,7 @@ const RegisterScreen = ({navigation}) => {
           onCancel={() => {
             setOpen(false);
           }}
-        />
+        /> */}
 
         <CustomButton label={'Register'} onPress={() => {}} />
 

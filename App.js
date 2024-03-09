@@ -4,19 +4,17 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import ChoiceAmenity from './src/pages/Host/CreatePalace/ChoiceAmenity';
 // import Home from './src/pages/Guest/Home/Home';
-import AuthStack from './src/navigation/AuthStack';
+ import AuthStack from './src/navigation/AuthStack';
 // import AppStack from './src/navigation/AppStack';
 
-function App() {
+
+export default function App() {
   return (
     <NavigationContainer>
-      {/* <AppStack /> */}
       <AuthStack />
     </NavigationContainer>
   );
 }
-
-export default App;
 
 // export default function App() {
 //   return (
