@@ -1,17 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // import ChoiceAmenity from './src/pages/Host/CreatePalace/ChoiceAmenity';
 // import Home from './src/pages/Guest/Home/Home';
- import AuthStack from './src/navigation/AuthStack';
-// import AppStack from './src/navigation/AppStack';
-
+// import AuthStack from './src/navigation/AuthStack';
+// import LoginScreen from './src/screens/LoginScreen';
+// import TabNavigator from './src/navigation/TabNavigator';
+//import AppStack from './src/navigation/AppStack';
+import AppStack from './src/navigation/AppStack';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <AuthStack />
+      <AppStack />
     </NavigationContainer>
   );
 }

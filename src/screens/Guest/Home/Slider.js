@@ -49,7 +49,7 @@ const Slider = () => {
         viewabilityConfig={viewabilityConfig}
       />
       <Pagination data={listImage} scrollX={scrollX} index={index} />
-      <Button title='Order' style={styles.button} />
+      <Button title='Order' style={styles.customBtn} />
       <Text></Text>
     </View>
   );
@@ -58,8 +58,7 @@ const Slider = () => {
 export default Slider;
 
 const styles = StyleSheet.create({
-    button:{
-       marginBottom: 30,
-       paddingBottom: 30
+    customBtn:{
+       marginBottom: 300,
     }
 });

@@ -14,8 +14,9 @@ import TabNavigator from './TabNavigator';
 
 const Drawer = createDrawerNavigator();
 
-const AuthStack = () => {
+const AppStack = () => {
   return (
+
     <Drawer.Navigator
       drawerContent={props => <CustomDrawer {...props} />}
       screenOptions={{
@@ -25,7 +26,6 @@ const AuthStack = () => {
         drawerInactiveTintColor: '#333',
         drawerLabelStyle: {
           marginLeft: -25,
-          fontFamily: 'Roboto-Medium',
           fontSize: 15,
         },
       }}>
@@ -78,4 +78,4 @@ const AuthStack = () => {
   );
 };
 
-export default AuthStack;
+export default AppStack;

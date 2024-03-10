@@ -16,7 +16,6 @@ const OnboardingScreen = ({navigation}) => {
       <View style={{marginTop: 20}}>
         <Text
           style={{
-            fontFamily: 'Inter-Bold',
             fontWeight: 'bold',
             fontSize: 30,
             color: '#20315f',
@@ -48,7 +47,6 @@ const OnboardingScreen = ({navigation}) => {
             fontSize: 18,
             textAlign: 'center',
             fontWeight: 'bold',
-            fontFamily: 'Roboto-MediumItalic',
           }}>
           Let's Begin
         </Text>

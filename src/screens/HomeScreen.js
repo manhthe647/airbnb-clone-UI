@@ -8,19 +8,18 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
+//  import Carousel from 'react-native-snap-carousel';
 import Feather from 'react-native-vector-icons/Feather';
 
-import BannerSlider from '../components/BannerSlider';
-import {windowWidth} from '../utils/Dimensions';
+// import BannerSlider from '../components/BannerSlider';
+ import {windowWidth} from '../utils/Dimensions';
 
-import {freeGames, paidGames, sliderData} from '../model/data';
-import CustomSwitch from '../components/CustomSwitch';
-import ListItem from '../components/ListItem';
+ import {freeGames, paidGames, sliderData} from '../model/data';
+ import CustomSwitch from '../components/CustomSwitch';
+ import ListItem from '../components/ListItem';
 
 export default function HomeScreen({navigation}) {
-  const [gamesTab, setGamesTab] = useState(1);
-
+   const [gamesTab, setGamesTab] = useState(1);
   const renderBanner = ({item, index}) => {
     return <BannerSlider data={item} />;
   };
@@ -31,14 +30,15 @@ export default function HomeScreen({navigation}) {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
-      <ScrollView style={{padding: 20}}>
-        <View
+       <ScrollView style={{padding: 20}}>
+       <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
             marginBottom: 20,
+            marginTop: 24
           }}>
-          <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
+          <Text style={{fontSize: 18}}>
             Hello John Doe
           </Text>
           <TouchableOpacity onPress={() => navigation.openDrawer()}>
@@ -49,7 +49,6 @@ export default function HomeScreen({navigation}) {
             />
           </TouchableOpacity>
         </View>
-
         <View
           style={{
             flexDirection: 'row',
@@ -67,22 +66,20 @@ export default function HomeScreen({navigation}) {
           />
           <TextInput placeholder="Search" />
         </View>
-
         <View
           style={{
             marginVertical: 15,
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
+          <Text style={{fontSize: 18}}>
             Upcoming Games
           </Text>
           <TouchableOpacity onPress={() => {}}>
             <Text style={{color: '#0aada8'}}>See all</Text>
           </TouchableOpacity>
         </View>
-
-        <Carousel
+        {/* <Carousel
           ref={c => {
             this._carousel = c;
           }}
@@ -91,7 +88,7 @@ export default function HomeScreen({navigation}) {
           sliderWidth={windowWidth - 40}
           itemWidth={300}
           loop={true}
-        />
+        /> */}
 
         <View style={{marginVertical: 20}}>
           <CustomSwitch
@@ -101,7 +98,7 @@ export default function HomeScreen({navigation}) {
             onSelectSwitch={onSelectSwitch}
           />
         </View>
-
+        
         {gamesTab == 1 &&
           freeGames.map(item => (
             <ListItem
@@ -135,7 +132,9 @@ export default function HomeScreen({navigation}) {
               }
             />
           ))}
-      </ScrollView>
+
+
+       </ScrollView>
     </SafeAreaView>
   );
 }
